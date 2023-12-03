@@ -1,0 +1,3 @@
+echo 'export AZURE_OPENAI_ENDPOINT=https://aoai.hacktogether.net
+' >> ~/.bashrc
+echo 'export AZURE_OPENAI_KEY=d26adf46-a5b4-4c32-b623-5775821e247f/MeDott29' >> ~/.bashrc
