@@ -1,0 +1,18 @@
+@page
+@model ChatModel
+@{
+    ViewData["Title"] = "Chat";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1>Chat</h1>
+            <ul id="messagesList"></ul>
+            <input type="text" id="messageInput" />
+            <button id="sendButton">Send</button>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/chat.js"></script>
