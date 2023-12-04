@@ -26,6 +26,12 @@ catch (Exception ex)
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
+app.UseWebSockets();
+app.UseSignalR(routes =>  // Middleware to support SignalR
+{
+    routes.MapHub<ChatHub>("/chatHub");
+});
+
 app.MapGet("/", async () => 
 {
     var client = new OpenAIClient(new Uri(endpoint), new AzureKeyCredential(key));
