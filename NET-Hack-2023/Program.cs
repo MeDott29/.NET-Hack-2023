@@ -24,7 +24,14 @@ catch (Exception ex)
 }
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddSignalR();
 var app = builder.Build();
+
+app.UseWebSockets();
+app.UseSignalR(routes =>  // Middleware to support SignalR
+{
+    routes.MapHub<ChatHub>("/chatHub");
+});
 
 app.MapGet("/", async () => 
 {
@@ -57,7 +64,6 @@ async Task<string> GetCompletion(OpenAIClient client)
         DeploymentName = "gpt-35-turbo", 
         Prompts = { "When was Microsoft founded?" },
     };
-
     Response<Completions> completionsResponse = await client.GetCompletionsAsync(completionsOptions);
     return completionsResponse.Value.Choices[0].Text;
 }
