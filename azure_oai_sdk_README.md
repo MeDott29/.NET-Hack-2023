@@ -48,7 +48,18 @@ OpenAIClient client = useAzureOpenAI
         new AzureKeyCredential("your-azure-openai-resource-api-key"))
     : new OpenAIClient("your-api-key-from-platform.openai.com");
 ```
+## Launch Checklist
 
+Before launching your application using Azure OpenAI, ensure you have completed the following steps:
+
+1. Validate your Azure Subscription and OpenAI access as per the provided links in the existing prerequisites section.
+2. Confirm the installation of the .NET client library package using NuGet if not already installed.
+3. Set up Environment Variables 'AZURE_OPENAI_ENDPOINT' and 'AZURE_OPENAI_KEY' with the correct values for Azure OpenAI resource endpoint and API key.
+4. Test the application locally ensuring all endpoints and functionality are working as expected.
+5. Deploy the application to the desired hosting environment (e.g., Azure App Service).
+6. Validate the deployed application's functionality in the production environment.
+7. Monitor the application's performance and error logs using Azure Monitoring tools or other logging frameworks as configured in appsettings.json.
+8. Ensure there is a process in place for regular updates and maintenance post-launch.
 #### Create OpenAIClient with an Azure Active Directory Credential
 
 Client subscription key authentication is used in most of the examples in this getting started guide, but you can also authenticate with Azure Active Directory using the [Azure Identity library][azure_identity]. To use the [DefaultAzureCredential][azure_identity_dac] provider shown below,
