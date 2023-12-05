@@ -1,19 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "4n7b4gpHdFo7HOr0dvj3rhaXhfnDOOIkwxa2FrrH0dfskPfNeA/+EbGuvAv+/diqwGfoy7Z9RXTLi9TPeAXsPQ==",
+  "dgSpecHash": "84eRlcWLF1+hB6oiw4p9jgOQ+MjRFuBZNoOK2wDbclWM0nUD39EFF2VoBcQU3i8vWzB/gD7MfV+YQU/LyVn3Aw==",
   "success": true,
-  "projectFilePath": "/home/m/.NET-Hack-2023/NET-Hack-2023/NET-Hack-2023.csproj",
+  "projectFilePath": "C:\\Users\\mhend\\source\\repos\\.NET-Hack-2023\\NET-Hack-2023\\NET-Hack-2023.csproj",
   "expectedPackageFiles": [
-    "/home/m/.nuget/packages/azure.ai.openai/1.0.0-beta.9/azure.ai.openai.1.0.0-beta.9.nupkg.sha512",
-    "/home/m/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
-    "/home/m/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "/home/m/.nuget/packages/system.diagnostics.diagnosticsource/6.0.1/system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
-    "/home/m/.nuget/packages/system.memory.data/1.0.2/system.memory.data.1.0.2.nupkg.sha512",
-    "/home/m/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
-    "/home/m/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-    "/home/m/.nuget/packages/system.text.encodings.web/4.7.2/system.text.encodings.web.4.7.2.nupkg.sha512",
-    "/home/m/.nuget/packages/system.text.json/4.7.2/system.text.json.4.7.2.nupkg.sha512",
-    "/home/m/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+    "C:\\Users\\mhend\\.nuget\\packages\\azure.ai.openai\\1.0.0-beta.9\\azure.ai.openai.1.0.0-beta.9.nupkg.sha512",
+    "C:\\Users\\mhend\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
+    "C:\\Users\\mhend\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
+    "C:\\Users\\mhend\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
+    "C:\\Users\\mhend\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
+    "C:\\Users\\mhend\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\mhend\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\mhend\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
+    "C:\\Users\\mhend\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
+    "C:\\Users\\mhend\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
   "logs": []
 }

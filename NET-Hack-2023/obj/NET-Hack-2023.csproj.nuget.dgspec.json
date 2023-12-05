@@ -1,25 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "/home/m/.NET-Hack-2023/NET-Hack-2023/NET-Hack-2023.csproj": {}
+    "C:\\Users\\mhend\\source\\repos\\.NET-Hack-2023\\NET-Hack-2023\\NET-Hack-2023.csproj": {}
   },
   "projects": {
-    "/home/m/.NET-Hack-2023/NET-Hack-2023/NET-Hack-2023.csproj": {
+    "C:\\Users\\mhend\\source\\repos\\.NET-Hack-2023\\NET-Hack-2023\\NET-Hack-2023.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/m/.NET-Hack-2023/NET-Hack-2023/NET-Hack-2023.csproj",
+        "projectUniqueName": "C:\\Users\\mhend\\source\\repos\\.NET-Hack-2023\\NET-Hack-2023\\NET-Hack-2023.csproj",
         "projectName": "NET-Hack-2023",
-        "projectPath": "/home/m/.NET-Hack-2023/NET-Hack-2023/NET-Hack-2023.csproj",
-        "packagesPath": "/home/m/.nuget/packages/",
-        "outputPath": "/home/m/.NET-Hack-2023/NET-Hack-2023/obj/",
+        "projectPath": "C:\\Users\\mhend\\source\\repos\\.NET-Hack-2023\\NET-Hack-2023\\NET-Hack-2023.csproj",
+        "packagesPath": "C:\\Users\\mhend\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mhend\\source\\repos\\.NET-Hack-2023\\NET-Hack-2023\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/m/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\mhend\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -49,7 +52,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -61,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.125/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

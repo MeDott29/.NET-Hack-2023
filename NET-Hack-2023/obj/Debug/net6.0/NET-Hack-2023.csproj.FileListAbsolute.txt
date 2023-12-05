@@ -25,3 +25,14 @@
 /home/m/.NET-Hack-2023/NET-Hack-2023/bin/Debug/net6.0/System.Diagnostics.DiagnosticSource.dll
 /home/m/.NET-Hack-2023/NET-Hack-2023/bin/Debug/net6.0/System.Memory.Data.dll
 /home/m/.NET-Hack-2023/NET-Hack-2023/obj/Debug/net6.0/NET-Hack-2023.csproj.CopyComplete
+C:\Users\mhend\source\repos\.NET-Hack-2023\NET-Hack-2023\obj\Debug\net6.0\NET-Hack-2023.csproj.AssemblyReference.cache
+C:\Users\mhend\source\repos\.NET-Hack-2023\NET-Hack-2023\obj\Debug\net6.0\NET-Hack-2023.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mhend\source\repos\.NET-Hack-2023\NET-Hack-2023\obj\Debug\net6.0\NET-Hack-2023.AssemblyInfoInputs.cache
+C:\Users\mhend\source\repos\.NET-Hack-2023\NET-Hack-2023\obj\Debug\net6.0\NET-Hack-2023.AssemblyInfo.cs
+C:\Users\mhend\source\repos\.NET-Hack-2023\NET-Hack-2023\obj\Debug\net6.0\NET-Hack-2023.csproj.CoreCompileInputs.cache
+C:\Users\mhend\source\repos\.NET-Hack-2023\NET-Hack-2023\obj\Debug\net6.0\NET-Hack-2023.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\mhend\source\repos\.NET-Hack-2023\NET-Hack-2023\obj\Debug\net6.0\NET-Hack-2023.RazorAssemblyInfo.cache
+C:\Users\mhend\source\repos\.NET-Hack-2023\NET-Hack-2023\obj\Debug\net6.0\NET-Hack-2023.RazorAssemblyInfo.cs
+C:\Users\mhend\source\repos\.NET-Hack-2023\NET-Hack-2023\obj\Debug\net6.0\NET-Hack-2023.sourcelink.json
+C:\Users\mhend\source\repos\.NET-Hack-2023\NET-Hack-2023\obj\Debug\net6.0\NET-Hack-2023.dll
+C:\Users\mhend\source\repos\.NET-Hack-2023\NET-Hack-2023\obj\Debug\net6.0\NET-Hack-2023.pdb
