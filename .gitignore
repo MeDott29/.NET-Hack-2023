@@ -1,4 +1,4 @@
 ./NET-Hack-2023/env_variables.txt
 .vs
-env_variables.txt
-OpenAI_api.cs
+./env_variables.txt
+./OpenAI_api.cs
