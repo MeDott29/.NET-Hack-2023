@@ -23,12 +23,12 @@ catch (Exception ex)
     Console.WriteLine($"An error occurred: {ex.Message}");
 }
 
-var builder = WebApplication.CreateBuilder(args);
+var builder = Host.CreateBuilder(args);
 builder.Services.AddSignalR();
 var app = builder.Build();
 
 app.UseWebSockets();
-app.UseSignalR(routes =>  // Middleware to support SignalR
+app.UseEndpoints(routes =>  // Middleware to support SignalR
 {
     routes.MapHub<ChatHub>("/chatHub");
 });
