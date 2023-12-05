@@ -31,7 +31,7 @@ namespace NET_Hack_2023.Hubs
             var chatCompletionsOptions = new ChatCompletionsOptions()
             {
                 DeploymentName = "gpt-35-turbo-0613",
-                Messages = conversation
+                SetMessages(conversation)
             };
 
             Response<ChatCompletions> completionsResponse = await _client.GetChatCompletionsAsync(chatCompletionsOptions);
