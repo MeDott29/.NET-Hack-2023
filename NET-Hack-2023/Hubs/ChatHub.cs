@@ -41,7 +41,7 @@ namespace NET_Hack_2023.Hubs
             await Clients.Caller.SendAsync("ReceiveMessage", response);
         }
 
-        public override async Task OnDisconnectedAsync(Exception exception)
+        public override async Task OnDisconnectedAsync(Exception? exception)
         {
             _conversations.TryRemove(Context.ConnectionId, out _);
             await base.OnDisconnectedAsync(exception);
