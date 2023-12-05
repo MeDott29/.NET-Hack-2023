@@ -139,6 +139,77 @@ CompletionsOptions completionsOptions = new()
     DeploymentName = "text-davinci-003",
     Prompts =
     {
+}
+```
+
+### Thread safety
+
+We guarantee that all client instance methods are thread-safe and independent of each other ([guideline](https://azure.github.io/azure-sdk/dotnet_introduction.html#dotnet-service-methods-thread-safety)). This ensures that the recommendation of reusing client instances is always safe, even across threads.
+
+### Additional concepts
+<!-- CLIENT COMMON BAR -->
+[Client options](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/README.md#configuring-service-clients-using-clientoptions) |
+[Accessing the response](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/README.md#accessing-http-response-details-using-responset) |
+[Long-running operations](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/README.md#consuming-long-running-operations-using-operationt) |
+[Handling failures](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/README.md#reporting-errors-requestfailedexception) |
+[Diagnostics](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/Diagnostics.md) |
+[Mocking](https://learn.microsoft.com/dotnet/azure/sdk/unit-testing-mocking) |
+[Client lifetime](https://devblogs.microsoft.com/azure-sdk/lifetime-management-and-thread-safety-guarantees-of-azure-sdk-net-clients/)
+<!-- CLIENT COMMON BAR -->
+
+## Examples
+
+You can familiarize yourself with different APIs using [Samples](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/openai/Azure.AI.OpenAI/tests/Samples).
+
+### Generate chatbot response
+
+The `GenerateChatbotResponse` method authenticates using a DefaultAzureCredential, then generates text responses to input prompts.
+
+```C# Snippet:GenerateChatbotResponse
+string endpoint = "https://myaccount.openai.azure.com/";
+var client = new OpenAIClient(new Uri(endpoint), new DefaultAzureCredential());
+
+CompletionsOptions completionsOptions = new()
+{
+    DeploymentName = "text-davinci-003",
+    Prompts = { "What is Azure OpenAI?" },
+};
+
+Response<Completions> completionsResponse = client.GetCompletions(completionsOptions);
+string completion = completionsResponse.Value.Choices[0].Text;
+Console.WriteLine($"Chatbot: {completion}");
+```
+
+### Generate multiple chatbot responses with subscription key
+
+The `GenerateMultipleChatbotResponsesWithSubscriptionKey` method gives an example of generating text responses to input prompts using an Azure subscription key
+
+```C# Snippet:GenerateMultipleChatbotResponsesWithSubscriptionKey
+// Replace with your Azure OpenAI key
+string key = "YOUR_AZURE_OPENAI_KEY";
+string endpoint = "https://myaccount.openai.azure.com/";
+var client = new OpenAIClient(new Uri(endpoint), new AzureKeyCredential(key));
+
+CompletionsOptions completionsOptions = new()
+{
+    DeploymentName = "text-davinci-003",
+    Prompts =
+    {
+        "How are you today?",
+        "What is Azure OpenAI?",
+        "Why do children love dinosaurs?",
+        "Generate a proof of Euler's identity",
+        "Describe in single words only the good things that come into your mind about your mother."
+    },
+};
+
+Response<Completions> completionsResponse = client.GetCompletions(completionsOptions);
+
+foreach (Choice choice in completionsResponse.Value.Choices)
+{
+    Console.WriteLine($"Response for prompt {choice.Index}: {choice.Text}");
+}
+```
         "How are you today?",
         "What is Azure OpenAI?",
         "Why do children love dinosaurs?",
